@@ -1,0 +1,120 @@
+{
+    "client_name": "John Doe",
+    "client_id": "3035667990",
+    "dob": "18-10-2019",
+    "Interests": "jogging",
+    "medical_record": {
+      "Reference_number": 123,
+      "sex": "Male",
+      "height": 165,
+      "weight": 70,
+      "bmi": "25.17",
+      "body_fat": 33,
+      "blood_sugar": 126,
+      "blood_pressure_systolic": 135,
+      "blood_pressure_diasotlic": 80,
+      "Pulse (per minute)": 70,
+      "blood Sugar": 5.5,
+      "smoking": "Yes",
+      "alcohol": "Yes",
+      "pain": [
+        {
+          "area": "Back",
+          "Intensity": 5
+        },
+        {
+          "area": "Ankle",
+          "Intensity": 8
+        }
+      ],
+      "existing_illness": [
+        "diabetes",
+        "high_blood_pressure",
+        "obesity"
+      ],
+      "follow-up of existing illness": [
+        "GOPC"
+      ],
+      "short_term_goals": [
+        "Lose 5kg"
+      ],
+      "long_term_goals": [
+        "Maintain 65kg"
+      ],
+      "reminders/suggestions": [
+        "stop eatting food with high carbohydrate"
+      ],
+      "future follow-up": [
+        "daily lifestyle",
+        "health condition",
+        "eating"
+      ],
+      "current medication": [
+        {
+          "name": "XYZ",
+          "dose": "50mg",
+          "frequency": "4 times a day"
+        }
+      ]
+    },
+    "tag": [
+      {
+        "type": "health",
+        "info": "obesity"
+      },
+      {
+        "type": "location",
+        "info": "Tai Koo"
+      },
+      {
+        "type": "Ethnic minorities",
+        "info": "Indian"
+      },
+      {
+        "type": "age group",
+        "info": "18-25"
+      },
+      {
+        "type": "language",
+        "info": "Cantonese"
+      }
+    ],
+    "goals": [
+      {
+        "type": "weight",
+        "info": "drop_to_65"
+      },
+      {
+        "type": "body_fat",
+        "info": "lose_weight"
+      }
+    ],
+    "groups": [
+      {
+        "group_name": "weightloss_in_taikoo",
+        "num_of_member": 4,
+        "activities": [
+          "running",
+          "yoga"
+        ]
+      },
+      {
+        "group_name": "healthy_eating",
+        "num_of_member": 5,
+        "Activities": [
+          "grocery_shopping",
+          "meal_plan_sharing"
+        ]
+      },
+      {
+        "group_name": "jane_fam",
+        "num_of_member": 4,
+        "Activities": [
+          "pilates",
+          "cooking"
+        ]
+      }
+    ]
+  }
+  
+  
