@@ -3,6 +3,8 @@ import React from 'react';
 import Timetable from 'react-timetable-events';
 import moment from "moment";
 
+import Button from '@material-ui/core/Button';
+
 import HeadBar from '../components/HeadBar'
 import TailBar from '../components/TailBar'
 
@@ -56,8 +58,6 @@ export default class User extends React.Component{
         ]
       },
 
-
-
       showTomorrow: true
     }
 
@@ -100,7 +100,9 @@ export default class User extends React.Component{
     return (
       <div className="App">
         <HeadBar/>
-        {this.state.showTomorrow ? <button  onClick={this.ToNextDay}>Tomorrow</button> : <button onClick={this.ToToday}>Back</button>}
+        {/* <Grid container class={c.root} justify="center"> */}
+        {this.state.showTomorrow ? <Button  onClick={this.ToNextDay}>Tomorrow</Button> : <Button onClick={this.ToToday}>Back</Button>}
+        {/* </Grid> */}
         <Timetable events={this.state.activityList} renderEvent={this.renderEvent}/>
         <TailBar/>
       </div>
