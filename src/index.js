@@ -7,6 +7,7 @@ import User from './pages/User';
 import Activity from './pages/Activity';
 import Goal from './pages/Goal';
 import Group from './pages/Group';
+import Profile from './pages/Profile';
 
 render(
     <Router>
@@ -15,6 +16,7 @@ render(
             <Route path="/activity" exact component={Activity}/>
             <Route path="/goal" exact component={Goal}/>
             <Route path="/group" exact component={Group}/>
+            <Route path="/profile" exact component={Profile}/>
         </div>
     </Router>,
     document.getElementById('root')
