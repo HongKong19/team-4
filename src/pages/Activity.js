@@ -1,7 +1,13 @@
 import React from 'react';
+import HeadBar from '../components/HeadBar'
+import TailBar from '../components/TailBar'
 
 export default function Activity(){
     return (
-        <div>Activity</div>
+        <div>
+            <HeadBar/>
+            Activity
+            <TailBar/>
+        </div>
     );
 }

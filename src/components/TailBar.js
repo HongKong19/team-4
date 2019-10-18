@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import FolderIcon from '@material-ui/icons/Folder';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+
+
+import EventIcon from '@material-ui/icons/Event';
+import GroupIcon from '@material-ui/icons/Group';
+import TrackChangesIcon from '@material-ui/icons/TrackChanges';
+import PersonIcon from '@material-ui/icons/Person';
 
 const useStyles = makeStyles({
   root: {
@@ -21,15 +24,14 @@ export default function LabelBottomNavigation() {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    console.log(newValue);
   };
 
   return (
     <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-      <BottomNavigationAction label="Recents" value="recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" value="favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" value="nearby" icon={<LocationOnIcon />} />
-      <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon />} />
+        <BottomNavigationAction component={Link} to="/activity" label="Activity" value="activity" icon={<EventIcon />} />
+        <BottomNavigationAction component={Link} to="/" label="User" value="" icon={<PersonIcon />} />
+        <BottomNavigationAction component={Link} to="/group" label="Group" value="group" icon={<GroupIcon />} />
+        <BottomNavigationAction component={Link} to="/goal" label="Goal" value="goal" icon={<TrackChangesIcon />} />
     </BottomNavigation>
   );
 }
