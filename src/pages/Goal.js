@@ -4,6 +4,7 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
 
 import HeadBar from '../components/HeadBar'
 import TailBar from '../components/TailBar'
@@ -31,49 +32,41 @@ export default class Goal extends React.Component{
         return (
           <div className="App">
             <HeadBar/>
+            <div>
             <Grid style={{ textAlign:"center"}} item xs={12} justify="space-around">
-                <Paper>Today's Goal</Paper>
+                <Typography>Today's Goal</Typography>
             </Grid>
             <tbody>
                 <tr>
                 <td style={{ width: "20%", marginTop: "20px", paddingTop: "20px"}} class="today">
                     <CircularProgressbar value={this.state.todayGoal.percentage} text={`${this.state.todayGoal.percentage}%`} />
                 </td>
-                <td style={{ textAlign:"left"}}>{this.state.todayGoal.target}</td>
+                <td style={{ textAlign:"left"}}><Typography>{this.state.todayGoal.target}</Typography></td>
                 </tr>
             </tbody>
             <Grid style={{ textAlign:"center"}} item xs={12} justify="space-around">
-                <Paper>Our Short-term Goal</Paper>
+                <Typography>Our Short-term Goal</Typography>
             </Grid>
             <tbody>
                 <tr>
                 <td style={{ width: "20%", marginTop: "20px", paddingTop: "20px"}} class="today">
                     <CircularProgressbar value={this.state.STGoal.percentage} text={`${this.state.STGoal.percentage}%`} />
                 </td>
-                <td style={{ textAlign:"left"}}>{this.state.STGoal.target}</td>
+                <td style={{ textAlign:"left"}}><Typography>{this.state.STGoal.target}</Typography></td>
                 </tr>
             </tbody>
             <Grid style={{ textAlign:"center"}} item xs={12} justify="space-around">
-                <Paper>Our Long-term Goal</Paper>
+                <Typography>Our Long-term Goal</Typography>
             </Grid>
             <tbody>
                 <tr>
                 <td style={{ width: "20%", marginTop: "20px", paddingTop: "20px"}} class="today">
                     <CircularProgressbar value={this.state.LTGoal.percentage} text={`${this.state.LTGoal.percentage}%`} />
                 </td>
-                <td style={{ textAlign:"left"}}>{this.state.LTGoal.target}</td>
+                <td style={{ textAlign:"left"}}><Typography>{this.state.LTGoal.target}</Typography></td>
                 </tr>
             </tbody>
-            {/* <Grid class="st">
-                <h3>Our Short-term Goal</h3>
-                <CircularProgressbar value={this.state.STGoal.percentage} text={`${this.state.STGoal.percentage}%`} />
-                <span>{this.state.STGoal.target}</span>
-            </Grid>
-            <Grid class="lt">
-                <h3>Our Long-term Goal</h3>
-                <CircularProgressbar value={this.state.LTGoal.percentage} text={`${this.state.LTGoal.percentage}%`} />
-                <span>{this.state.LTGoal.target}</span>
-            </Grid> */}
+            </div>
             <TailBar/>
           </div>
         );
