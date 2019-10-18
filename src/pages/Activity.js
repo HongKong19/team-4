@@ -11,7 +11,7 @@ export default class User extends React.Component{
     super(props);
     this.state={
       "nextActivity": {
-        Today: [
+        Tomorrow: [
         {
           id: 2,
           name: 'Running',
