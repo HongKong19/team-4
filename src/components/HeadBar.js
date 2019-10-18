@@ -26,7 +26,9 @@ export default function HeadBar(){
         <div className={classes.root}>
             <AppBar position="static">
             <Toolbar className={classes.Toolbar}>
-                <Typography variant="h6" className={classes.title}>News</Typography>
+                <Typography variant="h6" className={classes.title}>
+                    Tracker
+                </Typography>
             </Toolbar>
             </AppBar>
         </div>

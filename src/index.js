@@ -9,6 +9,7 @@ import Goal from './pages/Goal';
 import Group from './pages/Group';
 import Profile from './pages/Profile';
 import GroupDetail from './pages/GroupDetail';
+import History from './pages/History';
 
 render(
     <Router>
@@ -19,6 +20,7 @@ render(
             <Route path="/group" exact component={Group}/>
             <Route path="/groupdetail" exact component={GroupDetail}/>
             <Route path="/profile" exact component={Profile}/>
+            <Route path="/history" exact component={History}/>
         </div>
     </Router>,
     document.getElementById('root')

@@ -9,6 +9,7 @@ import EventIcon from '@material-ui/icons/Event';
 import GroupIcon from '@material-ui/icons/Group';
 import TrackChangesIcon from '@material-ui/icons/TrackChanges';
 import PersonIcon from '@material-ui/icons/Person';
+import HistoryIcon from '@material-ui/icons/History';
 
 const useStyles = makeStyles({
   root: {
@@ -32,6 +33,7 @@ export default function LabelBottomNavigation() {
         <BottomNavigationAction component={Link} to="/" label="User" value="" icon={<PersonIcon />} />
         <BottomNavigationAction component={Link} to="/group" label="Group" value="group" icon={<GroupIcon />} />
         <BottomNavigationAction component={Link} to="/goal" label="Goal" value="goal" icon={<TrackChangesIcon />} />
+        <BottomNavigationAction component={Link} to="/history" label="History" value="history" icon={<HistoryIcon />} />
     </BottomNavigation>
   );
 }
