@@ -1,12 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {render} from 'react-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Router pages import
+import User from './pages/User';
+import Activity from './pages/Activity';
+import Goal from './pages/Goal';
+import Group from './pages/Group';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+render(
+    <Router>
+        <div>
+            <Route path="/" exact component={User}/>
+            <Route path="/activity" exact component={Activity}/>
+            <Route path="/goal" exact component={Goal}/>
+            <Route path="/group" exact component={Group}/>
+        </div>
+    </Router>,
+    document.getElementById('root')
+);
